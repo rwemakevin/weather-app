@@ -11,7 +11,49 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="min-container">
+      <h1 class="app-title">Weather App</h1>
+      <p class="description">
+        The app provides detailed local forecast and weather forecast world
+        wide, and it also provides the current temperature in Celsius, sunrise
+        and sunset time according to city's time zone.
+      </p>
+      <div class="search">
+        <input
+          id="input-field"
+          class="input"
+          type="text"
+          placeholder="Enter City name"
+          required
+        />
+        <button id="search-button" class="button">Search</button>
+      </div>
+    </div>
+    <div class="error" id="error">
+      <p>No such City</p>
+    </div>
+    <div id="result-message">
+      <div class="result" id="result3">
+        <h3>Condition</h3>
+        <p id="desc">Description:</p>
+        <img id="image" src="" alt="" srcset="" />
+        <p id="wind">Wind (km/h):</p>
+      </div>
+      <div class="result" id="result1">
+        <h3>Location</h3>
+        <p id="country">Country:</p>
+        <p id="lat">Latitude:</p>
+        <p id="lon">Longitude:</p>
+      </div>
+      <div class="result" id="result2">
+        <h3>Temperature</h3>
+        <p id="cel">Celsius:</p>
+        <p id="fahr">Fahreneit:</p>
+        <p id="feel">Feels like:</p>
+      </div>
+    </div>
+  </body>
 </html>
